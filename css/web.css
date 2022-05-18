@@ -148,6 +148,7 @@ text-decoration: underline;
 }
 
 .video-container{position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;}
+
 .video-container iframe,.video-container object,.video-container embed{position:absolute;top:0;left:0;width:100%;height:90%;}
 
 
@@ -160,3 +161,42 @@ text-decoration: underline;
 	.nav-p1_wrapper{display: none;}
 }
 
+.loader{
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0, 0.7);
+  z-index: 9999;
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+.loader i{
+  font-size: 80px;
+  position: absolute;
+  top: 50%; left: 50%;
+  margin: -40px 0 0 -40px;
+  color: #fff;
+}
+
+
+#dynamic{
+    position:relative;
+    display:inline-block;
+}
+
+#dynamic::after{
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    right:-10px; 
+    width:4px;
+    height:100%;
+    background-color: white;
+}
+
+#dynamic.active::after{
+    display: none;
+}
