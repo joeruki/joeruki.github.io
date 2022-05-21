@@ -115,7 +115,7 @@ text-decoration: underline;
 .nav-p1_wrapper{
 	min-width: 200px;
 	min-height: 1200px;
-	background-color: mintcream;
+	background-color: powderblue;
 	padding: 80px 0 0 0;
 }
 
@@ -200,3 +200,24 @@ text-decoration: underline;
 #dynamic.active::after{
     display: none;
 }
+
+.text_box{
+  background-color: Lavenderblush;
+  padding: 20px;
+  margin-top: 20px;
+  font-family: 'Jua', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+}
+.blink {
+  animation: blink 0.5s infinite;
+  font-size: 2.5rem;
+}
+
+@keyframes blink {
+  to {
+    opacity: 0;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');

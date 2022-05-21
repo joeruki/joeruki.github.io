@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<script language="JavaScript">
+function doBlink() {
+var blink = document.all.tags("BLINK")
+for (var i=0; i < blink.length; i++)
+blink[i].style.visibility = blink[i].style.visibility == "" ? "hidden" : ""
+}
+function startBlink() {
+if (document.all)
+setInterval("doBlink()",50)
+}
+window.onload = startBlink;
+</script>
+
+</head>
+
+<body>
+
+<blink>깜빡</blink> 
+
+</body>
+
+</html>
