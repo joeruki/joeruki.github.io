@@ -97,9 +97,10 @@ text-decoration: underline;
 }
 
 .footer {
+  color: white;
   padding: 10px;
   text-align: center;
-  background: white;
+  background: darkblue;
   margin-top: 20px;
 }
 
@@ -219,5 +220,3 @@ text-decoration: underline;
     opacity: 0;
   }
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
